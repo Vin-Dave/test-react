@@ -35,6 +35,7 @@ function Pizza() {
 	return (
 		<>
 			<h3>Pizza Name</h3>
+			<h3>Pizza Name</h3>
 			<p>loreem loreemloreemloreemloreemloreemloreemloreem loreem loreem </p>
 			<img src='pizzas/focaccia.jpg' alt='pizza' />
 		</>
