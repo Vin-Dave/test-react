@@ -134,7 +134,7 @@ body {
 }
 
 .pizza span {
-	display: block;
+	display: inline-block;
 	font-size: 1.6rem;
 }
 

@@ -48,42 +48,67 @@ const pizzaData = [
 
 function Header() {
 	return (
-		<>
+		<header className='header'>
 			<h1>Menu Pizza</h1>
-			<p>
-				Lorem Ipsum is simply dummy text of the printing and typesetting
-				industry. Lorem Ipsum has been the industry's standard dummy text ever
-				since the 1500s, when an unknown printer took a galley of type and
-				scrambled it to make a type specimen book. It has survived not only five
-				centuries, but also the leap into electronic typesetting, remaining
-				essentially unchanged. It was popularised in the 1960s with the release
-				of Letraset sheets containing Lorem Ipsum passages, and more recently
-				with desktop publishing software like Aldus PageMaker including versions
-				of Lorem Ipsum.
-			</p>
-		</>
+		</header>
 	);
 }
 
 function Main() {
 	return (
-		<>
-			<h2>title</h2>
-			<p>lor</p>
-			<img src='pizzas/focaccia.jpg' alt='pizza' />
-		</>
+		<main className='menu'>
+			<h2>Menu</h2>
+			<Pizza
+				name='Pizza Prosciutto'
+				ingredients='Tomato, mozarella, ham, aragula, and burrata cheese'
+				price={18}
+				image='pizzas/prosciutto.jpg'
+			/>
+			<Pizza
+				name='Pizza Prosciutto'
+				ingredients='Tomato, mozarella, ham, aragula, and burrata cheese'
+				price={18}
+				image='pizzas/prosciutto.jpg'
+			/>
+			<Pizza
+				name='Pizza Prosciutto'
+				ingredients='Tomato, mozarella, ham, aragula, and burrata cheese'
+				price={18}
+				image='pizzas/prosciutto.jpg'
+			/>
+			<Pizza
+				name='Pizza Prosciutto'
+				ingredients='Tomato, mozarella, ham, aragula, and burrata cheese'
+				price={18}
+				image='pizzas/prosciutto.jpg'
+			/>
+		</main>
 	);
 }
 
-function Footer() {}
+function Pizza(props) {
+	return (
+		<div className='pizza'>
+			<div>
+				<h3>{props.name}</h3>
+				<p>{props.ingredients}</p>
+				<img src={props.image} alt={props.name} />
+				<span>{props.price}</span>
+			</div>
+		</div>
+	);
+}
+function Footer() {
+	return <footer>{new Date().toLocaleDateString()} We are open today!</footer>;
+}
 function App() {
 	return (
-		<>
+		<div className='container'>
 			<Header />
 			<Main />
-			<Main />
+
 			<Footer />
-		</>
+		</div>
 	);
 }
 
