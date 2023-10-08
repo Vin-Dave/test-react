@@ -1,12 +1,13 @@
-export function Pizza(props) {
-  return (
-    <li className="pizza">
-      <div>
-        <h3>{props.singleObj.name}</h3>
-        <p>{props.singleObj.ingredients}</p>
-        <img src={props.singleObj.photoName} alt={props.singleObj.name} />
-        <span>{props.singleObj.price}</span>
-      </div>
-    </li>
-  );
+export function Pizza({ singleObj }) {
+	if (singleObj.soldOut) return null;
+	return (
+		<li className='pizza'>
+			<div>
+				<h3>{singleObj.name}</h3>
+				<p>{singleObj.ingredients}</p>
+				<img src={singleObj.photoName} alt={singleObj.name} />
+				<span>{singleObj.price}</span>
+			</div>
+		</li>
+	);
 }
