@@ -1,12 +1,12 @@
 export function Pizza({ singleObj }) {
-	if (singleObj.soldOut) return null;
+	console.log(singleObj.soldOut);
 	return (
-		<li className='pizza'>
+		<li className={`pizza ${singleObj.soldOut ? "sold-out" : ""}`}>
 			<div>
 				<h3>{singleObj.name}</h3>
 				<p>{singleObj.ingredients}</p>
 				<img src={singleObj.photoName} alt={singleObj.name} />
-				<span>{singleObj.price}</span>
+				<span>{singleObj.soldOut ? "SOLD OUT" : singleObj.price}</span>
 			</div>
 		</li>
 	);
