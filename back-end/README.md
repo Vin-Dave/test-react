@@ -99,18 +99,18 @@ Wywołanie:
 
 ```js
 fetch("http://localhost:3000/words", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-        word: "pies",
-        translation: "dog",
-        category: "noun",
-    }),
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    word: "pies",
+    translation: "dog",
+    category: "noun",
+  }),
 })
-    .then((res) => res.json())
-    .console.log((res) => res.json());
+  .then((res) => res.json())
+  .console.log((res) => res.json());
 ```
 
 Consola:
