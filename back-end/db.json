@@ -1,34 +1,76 @@
 {
   "words": [
     {
-      "id": 1,
-      "word": "kot",
-      "translation": "cat",
-      "category": "noun"
+      "word": "12",
+      "translation": "12",
+      "category": "verb",
+      "id": 15
     },
     {
-      "word": "2",
-      "translation": "21",
+      "word": "12",
+      "translation": "12",
       "category": "noun",
-      "id": 2
+      "id": 16
     },
     {
-      "word": "2",
-      "translation": "21",
+      "word": "12",
+      "translation": "12",
       "category": "noun",
-      "id": 3
+      "id": 17
     },
     {
-      "word": "2",
-      "translation": "21",
+      "word": "12",
+      "translation": "12",
       "category": "noun",
-      "id": 5
+      "id": 18
     },
     {
-      "word": "2",
-      "translation": "21",
+      "word": "12",
+      "translation": "12",
+      "category": "verb",
+      "id": 19
+    },
+    {
+      "word": "12",
+      "translation": "12",
+      "category": "verb",
+      "id": 20
+    },
+    {
+      "word": "12",
+      "translation": "12",
+      "category": "verb",
+      "id": 21
+    },
+    {
+      "word": "121",
+      "translation": "12",
+      "category": "verb",
+      "id": 22
+    },
+    {
+      "word": "121",
+      "translation": "12",
+      "category": "verb",
+      "id": 23
+    },
+    {
+      "word": "121",
+      "translation": "12",
       "category": "noun",
-      "id": 6
+      "id": 24
+    },
+    {
+      "word": "121",
+      "translation": "12",
+      "category": "noun",
+      "id": 25
+    },
+    {
+      "word": "121",
+      "translation": "12",
+      "category": "noun",
+      "id": 26
     }
   ]
 }
